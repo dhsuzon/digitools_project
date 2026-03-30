@@ -3,7 +3,6 @@ import { StepData } from "../../../staticdata/StepData.js";
 const StepSection = () => {
   return (
     <div className="bg-[#F9FAFC] w-full py-20">
-      {/* মেইন কন্টেইনার: যা সব সেকশনের জন্য সেম রাখা হয়েছে */}
       <div className="max-w-7xl mx-auto px-6 md:px-15">
         <div className="text-center">
           <h2 className="text-5xl font-extrabold text-[#101727] mb-4">
