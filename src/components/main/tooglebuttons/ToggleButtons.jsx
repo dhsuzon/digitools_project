@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
+import { useProductContext } from "../../../context/ProductContext";
 
-const ToggleButtons = () => {
-
-  const [activeTab, setActiveTab] = useState("products");
+const ToggleButtons = ({ activeTab, setActiveTab }) => {
+  const {cart} = useProductContext()
+  
 
   return (
     <section className="w-full bg-white pt-20 pb-10 px-6">
@@ -18,7 +19,7 @@ const ToggleButtons = () => {
         </div>
 
         <div className="flex justify-center gap-1 items-center p-1.5 bg-white w-fit mx-auto rounded-full border border-[#E2E8F0] shadow-sm">
-          {/* ২. Products Button */}
+        
           <button
             onClick={() => setActiveTab("products")}
             className={`px-10 py-3.5 rounded-full  text-base transition-all cursor-pointer border-none scale-105 ${
@@ -30,7 +31,7 @@ const ToggleButtons = () => {
             Products
           </button>
 
-          {/* ৩. Cart Button */}
+         
           <button
             onClick={() => setActiveTab("cart")}
             className={`px-10 py-3.5 rounded-full text-base transition-all cursor-pointer border-none flex items-center gap-2 ${
@@ -39,7 +40,7 @@ const ToggleButtons = () => {
                 : "text-[#25065D] bg-white font-medium"
             }`}
           >
-            Cart(0)
+            Cart({cart.length})
           </button>
         </div>
       </div>

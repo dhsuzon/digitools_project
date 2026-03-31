@@ -1,7 +1,11 @@
 import React from "react";
 import { LuShoppingCart } from "react-icons/lu";
+import { useProductContext } from "../../context/ProductContext";
 
-const Navbar = () => {
+
+const Navbar = ({ setActiveTab }) => {
+  const {cart} = useProductContext()
+
   return (
     <div className="bg-base-100 shadow-sm sticky top-0 z-50 w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-15 flex justify-between items-center h-20 md:h-24">
@@ -26,7 +30,7 @@ const Navbar = () => {
 
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow-xl bg-base-100 rounded-box w-52 space-y-3 font-semibold border border-gray-100"
+              className="menu menu-sm dropdown-content mt-3 z-1 p-4 shadow-xl bg-base-100 rounded-box w-52 space-y-3 font-semibold border border-gray-100"
             >
               <li>
                 <a href="#products">Products</a>
@@ -73,10 +77,15 @@ const Navbar = () => {
 
         <div className="flex items-center gap-2 sm:gap-4 md:gap-6">
           <div className="relative cursor-pointer hover:scale-110 transition-transform p-2">
-            <LuShoppingCart className="text-xl md:text-2xl text-[#101727]" />
-            <span className="absolute top-0 right-0 bg-red-500 text-white text-[9px] md:text-[10px] rounded-full w-4 h-4 flex items-center justify-center">
-              0
-            </span>
+            <LuShoppingCart
+              onClick={() => setActiveTab("card")}
+              className="text-xl md:text-2xl text-[#101727]"
+            />
+            {cart.length > 0 && (
+              <span className="absolute top-0 right-0 bg-red-500 text-white text-[9px] md:text-[10px] rounded-full w-4 h-4 flex items-center justify-center">
+                {cart.length}
+              </span>
+            )}
           </div>
 
           <p className="hidden sm:block text-sm md:text-base font-semibold text-[#101727]/90 cursor-pointer hover:text-[#4F39F6] transition-colors whitespace-nowrap">
