@@ -74,7 +74,7 @@ const Navbar = () => {
         <div className="flex items-center gap-2 sm:gap-4 md:gap-6">
           <div className="relative cursor-pointer hover:scale-110 transition-transform p-2">
             <LuShoppingCart className="text-xl md:text-2xl text-[#101727]" />
-            <span className="absolute top-0 right-0 bg-[#4F39F6] text-white text-[9px] md:text-[10px] rounded-full w-4 h-4 flex items-center justify-center">
+            <span className="absolute top-0 right-0 bg-red-500 text-white text-[9px] md:text-[10px] rounded-full w-4 h-4 flex items-center justify-center">
               0
             </span>
           </div>
