@@ -1,12 +1,29 @@
-# React + Vite
+# 🎯 DigiTools - Premium Digital Tools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiTools is a modern, high-performance web application designed for discovering and purchasing premium digital assets, AI tools, and design templates. This project focuses on a seamless user experience with a dynamic cart system and categorized product viewing.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+[Click here to view the Live Site]()
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies Used
+- **React.js** (Frontend Library)
+- **Tailwind CSS** (Styling Framework)
+- **DaisyUI** (UI Components)
+- **React-Toastify** (Notifications)
+- **React Icons** (Icon Library)
+- **Context API** (State Management)
 
-## Expanding the ESLint configuration
+## ✨ Key Features
+1. **Dynamic Product Management**: Explore 10+ digital tools with real-time categorizations like "Best Seller", "Popular", and "New" using specialized tags and gradients.
+2. **Interactive Cart System**: Add, remove, and manage products in the cart with instant UI updates and a "Proceed to Checkout" feature that clears all selections.
+3. **Responsive & Modern UI**: A fully responsive design crafted with Tailwind CSS, featuring a floating navigation bar and animated sections for a premium feel.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Features Breakdown
+- **Toggling Sections**: Switch between the product list and the selected cart view without reloading.
+- **Real-time Notifications**: Integrated React-Toastify for clear feedback on adding or removing items.
+- **Advanced State Management**: Used React Context API to ensure cart data persists across all components.
+
+## ⚙️ Installation & Setup
+1. Clone the repository: `git clone https://github.com/ProgrammingHero1/B13-A6-DigiTools-Platform.git`
+2. Install dependencies: `npm install`
+3. Run the project: `npm run dev`
