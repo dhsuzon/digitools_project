@@ -1,5 +1,6 @@
 import React from "react";
-import { FaSquareFacebook, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { FaSquareFacebook,  FaXTwitter } from "react-icons/fa6";
+import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -79,13 +80,13 @@ const Footer = () => {
               Social Links
             </h4>
             <div className="flex justify-center md:justify-start gap-4">
-              <div className="w-10 p-2.5 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#4F39F6] transition-all cursor-pointer">
+              <div className="w-10 p-2.5 h-10 rounded-full bg-white text-[#101727]  flex items-center justify-center hover:bg-[#4F39F6] transition-all cursor-pointer">
                 <FaSquareFacebook size={20} />
               </div>
-              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#4F39F6] transition-all cursor-pointer">
-                <FaInstagram size={20} />
+              <div className="w-10 h-10 rounded-full bg-white text-[#101727] flex items-center justify-center hover:bg-[#4F39F6] transition-all cursor-pointer">
+                <AiFillInstagram size={20} />
               </div>
-              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#4F39F6] transition-all cursor-pointer">
+              <div className="w-10 h-10 rounded-full bg-white text-[#101727]  flex items-center justify-center hover:bg-[#4F39F6] transition-all cursor-pointer">
                 <FaXTwitter size={20} />
               </div>
             </div>

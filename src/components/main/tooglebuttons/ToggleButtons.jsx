@@ -19,7 +19,6 @@ const ToggleButtons = ({ activeTab, setActiveTab }) => {
         </div>
 
         <div className="flex justify-center gap-1 items-center p-1.5 bg-white w-fit mx-auto rounded-full border border-[#E2E8F0] shadow-sm">
-        
           <button
             onClick={() => setActiveTab("products")}
             className={`px-10 py-3.5 rounded-full  text-base transition-all cursor-pointer border-none scale-105 ${
@@ -31,16 +30,15 @@ const ToggleButtons = ({ activeTab, setActiveTab }) => {
             Products
           </button>
 
-         
           <button
             onClick={() => setActiveTab("cart")}
-            className={`px-10 py-3.5 rounded-full text-base transition-all cursor-pointer border-none flex items-center gap-2 ${
+            className={`px-10 py-3.5 rounded-full text-base transition-all cursor-pointer border-none flex items-center  ${
               activeTab === "cart"
                 ? "text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] shadow-lg shadow-indigo-500/30 font-bold"
                 : "text-[#25065D] bg-white font-medium"
             }`}
           >
-            Cart({cart.length})
+            Cart(<span className="text-red-500 text-center">{cart.length}</span>)
           </button>
         </div>
       </div>

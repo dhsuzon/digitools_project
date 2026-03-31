@@ -13,6 +13,8 @@ import {
   useProductContext,
 } from "./context/ProductContext.jsx";
 import SelectedCart from "./components/selectedcard/SelectedCart.jsx";
+import PricingSection from "./components/main/pricingsection/PricingSection.jsx";
+import { ToastContainer} from "react-toastify";
 
 
 const ProductList = () => {
@@ -58,9 +60,10 @@ const App = () => {
       </main>
 
       <StepSection />
-
+      <PricingSection />
       <WorkFlowSection />
       <Footer />
+      <ToastContainer position="top-center" />
     </ProductProvider>
   );
 };

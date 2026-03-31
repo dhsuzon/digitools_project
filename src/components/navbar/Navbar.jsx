@@ -3,7 +3,7 @@ import { LuShoppingCart } from "react-icons/lu";
 import { useProductContext } from "../../context/ProductContext";
 
 
-const Navbar = ({ setActiveTab }) => {
+const Navbar = ({setActiveTab }) => {
   const {cart} = useProductContext()
 
   return (
@@ -78,7 +78,7 @@ const Navbar = ({ setActiveTab }) => {
         <div className="flex items-center gap-2 sm:gap-4 md:gap-6">
           <div className="relative cursor-pointer hover:scale-110 transition-transform p-2">
             <LuShoppingCart
-              onClick={() => setActiveTab("card")}
+              onClick={() => setActiveTab("cart")}
               className="text-xl md:text-2xl text-[#101727]"
             />
             {cart.length > 0 && (
